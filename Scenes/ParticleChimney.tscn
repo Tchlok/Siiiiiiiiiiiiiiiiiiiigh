@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bjykqya32ldkr"]
+
+[ext_resource type="Texture2D" uid="uid://kxluocrj42gq" path="res://Sprites/Tex_SmokeCloud.png" id="1_ec211"]
+
+[sub_resource type="Curve" id="Curve_ec211"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.047040973, 1), 0.0, 0.0, 0, 0, Vector2(0.8952959, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[node name="ParticleChimney" type="CPUParticles2D"]
+position = Vector2(0, -7)
+amount = 45
+texture = ExtResource("1_ec211")
+lifetime = 20.0
+preprocess = 20.0
+spread = 25.0
+gravity = Vector2(0, -25)
+initial_velocity_min = 121.39
+initial_velocity_max = 158.96
+angular_velocity_min = -25.0
+angular_velocity_max = 25.0
+scale_amount_max = 2.5
+scale_amount_curve = SubResource("Curve_ec211")

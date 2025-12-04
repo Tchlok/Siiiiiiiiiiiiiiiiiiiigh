@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://16pqehcfgwpr"]
+
+[ext_resource type="Texture2D" uid="uid://3udq23chneba" path="res://Sprites/ChimneySheet.png" id="1_s0dmr"]
+
+[resource]
+atlas = ExtResource("1_s0dmr")
+region = Rect2(90, 0, 400, 0)

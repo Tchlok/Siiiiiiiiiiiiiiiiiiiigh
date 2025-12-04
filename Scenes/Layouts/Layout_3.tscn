@@ -1,0 +1,2098 @@
+[gd_scene load_steps=11 format=3 uid="uid://c6xfbcakgyi3i"]
+
+[ext_resource type="Texture2D" uid="uid://d2g64ouag3mme" path="res://Sprites/Tex_Window.png" id="1_vb5ey"]
+[ext_resource type="Texture2D" uid="uid://bhxp6e3bjmvsd" path="res://Sprites/Tex_BuildingWallDecoA.png" id="2_50h04"]
+[ext_resource type="Texture2D" uid="uid://c6icxwgyx3aqy" path="res://Sprites/Tex_BuildingWallDecoB.png" id="3_48745"]
+[ext_resource type="Texture2D" uid="uid://16pqehcfgwpr" path="res://Sprites/Tex_ChimneyA.tres" id="4_48745"]
+[ext_resource type="PackedScene" uid="uid://bjykqya32ldkr" path="res://Scenes/ParticleChimney.tscn" id="5_0f8rt"]
+[ext_resource type="Texture2D" uid="uid://ce8r6ive00cd2" path="res://Sprites/Tex_ChimneyB.tres" id="5_kdnf1"]
+[ext_resource type="Texture2D" uid="uid://hiybr0j8vcjy" path="res://Sprites/Tex_ChimneyC.tres" id="5_vukct"]
+[ext_resource type="Texture2D" uid="uid://diaemnorfoh75" path="res://Sprites/Tex_StarA.tres" id="8_3icl3"]
+[ext_resource type="Texture2D" uid="uid://b71nntukx4pc1" path="res://Sprites/Tex_StarB.tres" id="9_j2fjb"]
+[ext_resource type="Texture2D" uid="uid://denkick1p22rf" path="res://Sprites/Tex_StarC.tres" id="10_j2fjb"]
+
+[node name="Layout_3" type="Node2D"]
+
+[node name="FrontLayer" type="Node2D" parent="."]
+scale = Vector2(1.35, 1.35)
+
+[node name="SpawnPoints" type="Node2D" parent="FrontLayer"]
+z_index = 5
+
+[node name="Node2D" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(-1162.9628, -2298.5183)
+rotation = -0.05112142
+
+[node name="Node2D2" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(-798.5185, -2291.111)
+rotation = -0.055285763
+
+[node name="Node2D3" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(-429.6296, -2322.222)
+rotation = -0.055285763
+
+[node name="Node2D4" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(-96.296234, -2277.0366)
+rotation = -0.055285763
+
+[node name="Node2D5" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(258.51852, -2352.5923)
+rotation = -0.055285763
+
+[node name="Node2D6" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(300.74072, -1742.963)
+rotation = -0.17446299
+
+[node name="Node2D7" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(-64.44444, -1737.778)
+rotation = 0.00442262
+
+[node name="Node2D8" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(-384.44446, -1710.3704)
+rotation = 0.00442262
+
+[node name="Node2D9" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(-778.5186, -1671.1113)
+rotation = 0.00442262
+
+[node name="Node2D10" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(-1133.3334, -1679.2592)
+rotation = -0.10382581
+
+[node name="Node2D11" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(-1123.7037, -1076.2963)
+rotation = -0.023992345
+
+[node name="Node2D12" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(-757.0372, -1068.8889)
+rotation = -0.029057618
+
+[node name="Node2D13" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(-388.14813, -1102.9629)
+rotation = -0.029057618
+
+[node name="Node2D14" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(-40.00003, -1113.3335)
+rotation = -0.18225384
+
+[node name="Node2D15" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(265.18518, -1145.9259)
+rotation = 0.06854814
+
+[node name="Node2D16" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(1105.9259, -2748.8892)
+rotation = 0.06854814
+
+[node name="Node2D17" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(1468.1481, -2688.889)
+rotation = 0.012702178
+
+[node name="Node2D18" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(1838.5187, -2668.1482)
+rotation = 0.08413948
+
+[node name="Node2D19" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(2164.4446, -2584.4443)
+rotation = 0.08413948
+
+[node name="Node2D20" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(2109.63, -2094.815)
+rotation = 0.08413948
+
+[node name="Node2D21" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(1768.1481, -2139.2593)
+rotation = 0.20567387
+
+[node name="Node2D22" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(1400, -2094.0742)
+rotation = 0.15010647
+
+[node name="Node2D23" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(1047.4075, -2191.8518)
+rotation = 0.15010647
+
+[node name="Node2D24" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(999.25934, -1663.7036)
+rotation = 0.13113073
+
+[node name="Node2D25" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(1359.2594, -1618.5187)
+rotation = 0.20821822
+
+[node name="Node2D26" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(1714.815, -1598.5187)
+rotation = 0.1418104
+
+[node name="Node2D27" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(2048.8887, -1553.3331)
+rotation = 0.1418104
+
+[node name="Node2D28" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(2017.7776, -1068.1482)
+rotation = 0.100606516
+
+[node name="Node2D29" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(1651.8518, -1128.8889)
+rotation = 0.100606516
+
+[node name="Node2D30" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(1281.4814, -1117.7777)
+rotation = 0.100606516
+
+[node name="Node2D31" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(943.7037, -1210.3705)
+rotation = 0.016965866
+
+[node name="Node2D32" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(1802.9631, -3124.4446)
+rotation = 0.07003866
+
+[node name="Node2D33" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(2043.7039, -3091.8516)
+rotation = 0.07003866
+
+[node name="Node2D36" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(2326.6667, -3042.9631)
+rotation = 0.07003866
+
+[node name="Node2D34" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(68.14819, -2873.333)
+rotation = -0.036344506
+
+[node name="Node2D35" type="Node2D" parent="FrontLayer/SpawnPoints"]
+position = Vector2(323.70374, -2885.185)
+rotation = -0.036344506
+
+[node name="BuildingRects" type="Node2D" parent="FrontLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="FrontLayer/BuildingRects"]
+offset_left = -1368.8888
+offset_top = -2817.0366
+offset_right = 444.92517
+offset_bottom = 294.07446
+rotation = -0.035823345
+color = Color(0.49019608, 0.1882353, 0.54901963, 1)
+
+[node name="Windows" type="Node2D" parent="FrontLayer/BuildingRects/ColorRect"]
+position = Vector2(470.37033, 5301.4814)
+
+[node name="Row" type="Node2D" parent="FrontLayer/BuildingRects/ColorRect/Windows"]
+position = Vector2(260.74072, -4916.296)
+
+[node name="TexWindow" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row"]
+modulate = Color(0.4655167, 0.85, 0.34850004, 1)
+z_index = 3
+position = Vector2(-551.1111, 1.4814453)
+rotation = -3.1402555
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row/TexWindow"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow2" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(-191.85187, 22.962402)
+rotation = 3.074754
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row/TexWindow2"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow3" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row"]
+modulate = Color(0.4655167, 0.85, 0.34850004, 1)
+z_index = 3
+position = Vector2(185.92598, 2.9631348)
+rotation = 3.1415925
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row/TexWindow3"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow5" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row"]
+modulate = Color(0.4655167, 0.85, 0.34850004, 1)
+z_index = 3
+position = Vector2(871.843, 615.83026)
+rotation = 3.0228865
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row/TexWindow5"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow4" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(515.55554, 60.740723)
+rotation = 3.1415925
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row/TexWindow4"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="Row2" type="Node2D" parent="FrontLayer/BuildingRects/ColorRect/Windows"]
+position = Vector2(268.8889, -4292.5923)
+
+[node name="TexWindow" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row2"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(-554.81476, 12.592194)
+rotation = -3.2171295
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row2/TexWindow"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow2" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row2"]
+modulate = Color(0.4655167, 0.85, 0.34850004, 1)
+z_index = 3
+position = Vector2(-191.85187, 26.666286)
+rotation = 3.1415927
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row2/TexWindow2"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow3" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row2"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(200.74072, 2.9625921)
+rotation = 3.1415925
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row2/TexWindow3"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow4" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row2"]
+modulate = Color(0.28263777, 0.8520477, 0.43429992, 1)
+z_index = 3
+position = Vector2(518.51855, -18.51889)
+rotation = 3.1415925
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row2/TexWindow4"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="Row3" type="Node2D" parent="FrontLayer/BuildingRects/ColorRect/Windows"]
+position = Vector2(257.77777, -3689.6294)
+
+[node name="TexWindow" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row3"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(-551.1111, 1.4814453)
+rotation = -3.1402555
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row3/TexWindow"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow5" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row3"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(873.21704, -1228.3265)
+rotation = -3.1402555
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row3/TexWindow5"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow2" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row3"]
+modulate = Color(0.28263777, 0.8520477, 0.43429992, 1)
+z_index = 3
+position = Vector2(-191.85187, 22.962402)
+rotation = 3.074754
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row3/TexWindow2"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow6" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row3"]
+modulate = Color(0.28263777, 0.8520477, 0.43429992, 1)
+z_index = 3
+position = Vector2(853.3696, -12.701874)
+rotation = 3.2439814
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row3/TexWindow6"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow3" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row3"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(185.92598, 2.9631348)
+rotation = 3.1415925
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row3/TexWindow3"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow4" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row3"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(520.7408, 8.148137)
+rotation = 3.0405383
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows/Row3/TexWindow4"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexBuildingWallDecoA9" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+z_index = 9
+position = Vector2(-225.17314, -5281.921)
+rotation = -3.1415927
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA11" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+z_index = 9
+position = Vector2(688.59766, -5306.0293)
+rotation = -3.1415927
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA12" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+z_index = 9
+position = Vector2(1341.4404, -4688.7905)
+rotation = -1.5707964
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA13" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+z_index = 9
+position = Vector2(1101.1945, -5306.68)
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA10" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect/Windows"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+z_index = 9
+position = Vector2(173.16446, -5293.9507)
+rotation = -3.1415927
+texture = ExtResource("3_48745")
+
+[node name="TexBuildingWallDecoA" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(1390.7119, 1629.6058)
+rotation = 1.5707964
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA5" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(11.567627, 198.9906)
+rotation = 1.5707964
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA2" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(36.78831, 1286.1486)
+rotation = 4.72759
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA3" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(26.157719, 815.87695)
+rotation = 4.72759
+texture = ExtResource("3_48745")
+flip_h = true
+
+[node name="TexBuildingWallDecoA7" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(1814.3148, 1101.2427)
+rotation = 4.72759
+texture = ExtResource("3_48745")
+flip_h = true
+
+[node name="TexBuildingWallDecoA8" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(1785.886, 1269.7788)
+rotation = 4.72759
+texture = ExtResource("3_48745")
+flip_h = true
+
+[node name="TexBuildingWallDecoA9" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(26.481918, 1958.6755)
+rotation = 4.72759
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA4" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(1784.0853, 104.052574)
+rotation = 4.712389
+texture = ExtResource("3_48745")
+flip_v = true
+
+[node name="TexBuildingWallDecoA10" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(1812.0089, 1786.0441)
+rotation = 4.712389
+texture = ExtResource("3_48745")
+flip_v = true
+
+[node name="TexBuildingWallDecoA6" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(1240.9512, 749.50824)
+rotation = 3.1415927
+texture = ExtResource("3_48745")
+flip_v = true
+
+[node name="ColorRect3" type="ColorRect" parent="FrontLayer/BuildingRects"]
+offset_left = 976.29626
+offset_top = -3205.926
+offset_right = 2420.459
+offset_bottom = -94.81494
+rotation = 0.11404273
+color = Color(0.49019608, 0.1882353, 0.54901963, 1)
+
+[node name="Windows" type="Node2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+position = Vector2(464.4444, 5219.2593)
+
+[node name="Row" type="Node2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows"]
+position = Vector2(260.74072, -4916.296)
+
+[node name="TexWindow" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row"]
+modulate = Color(0.4655167, 0.85, 0.34850004, 1)
+z_index = 3
+position = Vector2(-551.1111, 1.4814453)
+rotation = -3.1402555
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row/TexWindow"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow2" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(-191.85187, 22.962402)
+rotation = 3.074754
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row/TexWindow2"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow3" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(185.92598, 2.9631348)
+rotation = 3.1415925
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row/TexWindow3"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow4" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+z_index = 3
+position = Vector2(517.03705, 46.66629)
+rotation = 3.1415925
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row/TexWindow4"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="Row2" type="Node2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows"]
+position = Vector2(256.58887, -4340.981)
+
+[node name="TexWindow" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row2"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(-532.2884, -6.692732)
+rotation = -3.1126778
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row2/TexWindow"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow2" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row2"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+z_index = 3
+position = Vector2(-175.25192, 43.556435)
+rotation = 3.1415927
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row2/TexWindow2"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow3" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row2"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(195.0413, -36.652508)
+rotation = 3.231331
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row2/TexWindow3"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow4" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row2"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(528.26166, -30.045734)
+rotation = 3.170931
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row2/TexWindow4"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="Row3" type="Node2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows"]
+position = Vector2(281.94855, -3817.2852)
+
+[node name="TexWindow" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row3"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(-544.55774, 0.74905777)
+rotation = -3.0921943
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row3/TexWindow"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow2" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row3"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(-174.60883, 3.7697945)
+rotation = 3.2601624
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row3/TexWindow2"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow3" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row3"]
+modulate = Color(0.28263777, 0.8520477, 0.43429992, 1)
+z_index = 3
+position = Vector2(169.41302, -20.675888)
+rotation = 3.1415925
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row3/TexWindow3"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow4" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row3"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(507.43607, -18.123484)
+rotation = 3.2011378
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row3/TexWindow4"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="Row4" type="Node2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows"]
+position = Vector2(273.22452, -3322.4673)
+
+[node name="TexWindow" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row4"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(-557.236, -29.77688)
+rotation = -3.2118635
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row4/TexWindow"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow2" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row4"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(-198.66093, 19.858948)
+rotation = 3.1415927
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row4/TexWindow2"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow3" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row4"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(155.9756, -33.424828)
+rotation = 3.1415925
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row4/TexWindow3"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow4" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row4"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(532.297, -9.050774)
+rotation = 3.1415925
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3/Windows/Row4/TexWindow4"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexBuildingWallDecoA" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(11.032593, 1520.7838)
+rotation = 1.5707964
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA2" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(29.36661, 208.94708)
+rotation = 4.712389
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA3" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(29.650513, 1081.7349)
+rotation = 4.7715592
+texture = ExtResource("3_48745")
+flip_h = true
+flip_v = true
+
+[node name="TexBuildingWallDecoA4" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(1427.1487, 160.02617)
+rotation = 1.6004462
+texture = ExtResource("3_48745")
+flip_h = true
+flip_v = true
+
+[node name="TexBuildingWallDecoA5" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(1437.4639, 644.83954)
+rotation = 1.5707964
+texture = ExtResource("2_50h04")
+flip_h = true
+flip_v = true
+
+[node name="TexBuildingWallDecoA6" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(1421.6915, 1196.0007)
+rotation = 1.5707964
+texture = ExtResource("2_50h04")
+flip_h = true
+flip_v = true
+
+[node name="TexBuildingWallDecoA7" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(1446.232, 1658.0671)
+rotation = 1.5707964
+texture = ExtResource("2_50h04")
+flip_h = true
+flip_v = true
+
+[node name="TexBuildingWallDecoA8" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(1446.2446, 2168.0283)
+rotation = 1.5707964
+texture = ExtResource("2_50h04")
+flip_h = true
+flip_v = true
+
+[node name="TexBuildingWallDecoA9" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+position = Vector2(7.7847557, 2053.879)
+rotation = -1.5270637
+texture = ExtResource("2_50h04")
+flip_h = true
+flip_v = true
+
+[node name="TexBuildingWallDecoA11" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+z_index = 9
+position = Vector2(268.3544, 15.730399)
+rotation = -3.1415927
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA12" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+z_index = 9
+position = Vector2(1204.6299, 10.000403)
+rotation = -3.1415927
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA13" type="Sprite2D" parent="FrontLayer/BuildingRects/ColorRect3"]
+modulate = Color(0.49019608, 0.1882353, 0.54901963, 1)
+z_index = 9
+position = Vector2(719.14105, 20.25668)
+rotation = -3.1415927
+texture = ExtResource("2_50h04")
+
+[node name="BackLayer" type="Node2D" parent="."]
+z_index = -40
+scale = Vector2(1.1, 1.1)
+
+[node name="SpawnPoint" type="Node2D" parent="BackLayer"]
+z_index = 5
+
+[node name="Node2D14" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-1289.9999, -5146.364)
+rotation = -0.022170108
+
+[node name="Node2D15" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-916.3637, -5151.8184)
+rotation = -0.053494252
+
+[node name="Node2D16" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-549.99994, -5152.727)
+rotation = -0.016040832
+
+[node name="Node2D17" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-176.36374, -5165.4546)
+rotation = -0.016040832
+
+[node name="Node2D18" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-160.90907, -4642.728)
+rotation = -0.016040832
+
+[node name="Node2D19" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-535.45447, -4629.091)
+rotation = -0.016040832
+
+[node name="Node2D20" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-903.63635, -4634.546)
+rotation = -0.049648557
+
+[node name="Node2D21" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-1277.2727, -4627.2725)
+rotation = 0.040822733
+
+[node name="Node2D22" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-1267.2727, -4132.727)
+rotation = -0.021301787
+
+[node name="Node2D23" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-887.2727, -4137.273)
+rotation = -0.08013339
+
+[node name="Node2D24" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-528.1818, -4139.999)
+rotation = 0.057826012
+
+[node name="Node2D25" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-152.7273, -4149.0903)
+rotation = -0.0024380162
+
+[node name="Node2D26" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-201.81818, -3659.9998)
+rotation = 0.096718445
+
+[node name="Node2D27" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-534.54535, -3636.3633)
+rotation = 0.056491196
+
+[node name="Node2D28" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-893.63635, -3600)
+rotation = -0.0567462
+
+[node name="Node2D29" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-1271.8181, -3594.5457)
+rotation = 0.022366732
+
+[node name="Node2D30" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(961.8181, -5123.636)
+rotation = 0.10369134
+
+[node name="Node2D31" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(1331.818, -5109.0913)
+rotation = -0.032862157
+
+[node name="Node2D32" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(1699.091, -5086.3643)
+rotation = 0.079806946
+
+[node name="Node2D33" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(2067.2727, -5081.819)
+rotation = 0.058658533
+
+[node name="Node2D34" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(2063.6362, -4558.1816)
+rotation = 0.013548754
+
+[node name="Node2D35" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(1695.4542, -4565.4546)
+rotation = 0.013548754
+
+[node name="Node2D36" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(1320, -4588.182)
+rotation = -0.011918571
+
+[node name="Node2D37" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(941.818, -4603.636)
+rotation = 0.091481626
+
+[node name="Node2D38" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(934.5456, -4109.091)
+rotation = 0.091481626
+
+[node name="Node2D39" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(1309.9999, -4092.7273)
+rotation = -0.010134399
+
+[node name="Node2D40" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(1669.091, -4068.182)
+rotation = 0.029046938
+
+[node name="Node2D41" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(2039.0908, -4060.9097)
+rotation = 0.07091616
+
+[node name="Node2D42" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(900.90906, -3570.0007)
+rotation = 0.07091616
+
+[node name="Node2D43" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(867.2727, -3045.4546)
+rotation = 0.07091616
+
+[node name="Node2D44" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(858.1818, -2535.455)
+rotation = 0.07091616
+
+[node name="Node2D45" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(957.2731, -5530.9087)
+rotation = 0.07091616
+
+[node name="Node2D47" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(1246.3636, -5515.4546)
+
+[node name="Node2D49" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(1854.5453, -5500.9087)
+rotation = 0.032402426
+
+[node name="Node2D50" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-1229.0908, -5568.182)
+
+[node name="Node2D51" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-867.2727, -5572.727)
+
+[node name="Node2D52" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(-310.90906, -5580)
+
+[node name="Node2D48" type="Node2D" parent="BackLayer/SpawnPoint"]
+position = Vector2(1539.091, -5513.636)
+
+[node name="BuildingRects" type="Node2D" parent="BackLayer"]
+position = Vector2(-1340.909, 90.90909)
+
+[node name="ColorRect2" type="ColorRect" parent="BackLayer"]
+offset_left = -1502.7273
+offset_top = -5557.272
+offset_right = 40.908936
+offset_bottom = -1032.7266
+rotation = -0.015692806
+color = Color(0.30093327, 0.11100001, 0.37, 1)
+
+[node name="TexWindow" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+z_index = 3
+position = Vector2(207.27252, 268.18167)
+rotation = -3.1038291
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow2" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(568.18164, 268.18167)
+rotation = -3.1991227
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow2"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow3" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(941.818, 274.54532)
+rotation = -3.1339498
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow3"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow4" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+z_index = 3
+position = Vector2(1311.818, 268.18167)
+rotation = -3.1339498
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow4"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow5" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(215.63867, 791.8899)
+rotation = -3.1038291
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow5"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow6" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(576.5478, 791.8899)
+rotation = -3.1991227
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow6"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow20" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(1275.9575, 1773.877)
+rotation = -3.0732377
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow20"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow7" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(950.18414, 798.25354)
+rotation = -3.1339498
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow7"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow8" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(1320.1841, 791.8899)
+rotation = -3.1339498
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow8"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow9" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+z_index = 3
+position = Vector2(219.27504, 1285.5262)
+rotation = -3.1038291
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow9"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow19" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+z_index = 3
+position = Vector2(940.1733, 1792.2463)
+rotation = -3.1038291
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow19"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow10" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(580.18414, 1285.5262)
+rotation = -3.1991227
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow10"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow13" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(207.45708, 1823.7085)
+rotation = -3.1038291
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow13"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow14" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(568.3662, 1823.7085)
+rotation = -3.1991227
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow14"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow11" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(953.8205, 1291.8899)
+rotation = -3.1339498
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow11"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow12" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(1323.8204, 1285.5262)
+rotation = -3.1339498
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect2/TexWindow12"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexBuildingWallDecoA" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(1520.8535, 1405.8572)
+rotation = 1.5707964
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA2" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(32.112015, 213.25793)
+rotation = 4.712389
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA3" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(23.713753, 2949.8267)
+rotation = 4.712389
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA7" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(1535.7815, 570.53394)
+rotation = 4.712389
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA10" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(31.09082, 2248.0376)
+rotation = 4.712389
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA8" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(28.1875, 1100.5781)
+rotation = 4.712389
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA9" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(18.527534, 1542.2991)
+rotation = 1.5707964
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA4" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(17.079697, 707.62836)
+rotation = 4.712389
+texture = ExtResource("3_48745")
+flip_h = true
+
+[node name="TexBuildingWallDecoA5" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(1522.1188, 977.6426)
+rotation = 4.712389
+texture = ExtResource("3_48745")
+flip_h = true
+
+[node name="TexBuildingWallDecoA15" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(1521.8445, 1864.1101)
+rotation = 4.712389
+texture = ExtResource("3_48745")
+flip_h = true
+
+[node name="TexBuildingWallDecoA11" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(-1.2087402, 1872.9395)
+rotation = 4.712389
+texture = ExtResource("3_48745")
+flip_h = true
+
+[node name="TexBuildingWallDecoA6" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(1527.4292, 175.80902)
+rotation = 4.712389
+texture = ExtResource("3_48745")
+flip_h = true
+
+[node name="TexBuildingWallDecoA12" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+z_index = 9
+position = Vector2(302.5901, 11.113823)
+rotation = 3.1415927
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA13" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+z_index = 9
+position = Vector2(769.59125, 32.081024)
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA14" type="Sprite2D" parent="BackLayer/ColorRect2"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+z_index = 9
+position = Vector2(1295.2808, 21.237984)
+rotation = 0.09757143
+texture = ExtResource("2_50h04")
+flip_h = true
+flip_v = true
+
+[node name="ColorRect3" type="ColorRect" parent="BackLayer"]
+offset_left = 770.0
+offset_top = -5537.273
+offset_right = 2313.6362
+offset_bottom = -1012.72754
+rotation = 0.0381656
+color = Color(0.30093327, 0.11100001, 0.37, 1)
+
+[node name="TexWindow" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+z_index = 3
+position = Vector2(207.27252, 268.18167)
+rotation = -3.1038291
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow2" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(568.18164, 268.18167)
+rotation = -3.1991227
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow2"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow3" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(941.818, 274.54532)
+rotation = -3.1339498
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow3"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow4" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+z_index = 3
+position = Vector2(1311.818, 268.18167)
+rotation = -3.1339498
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow4"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow5" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(215.63867, 791.8899)
+rotation = -3.1038291
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow5"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow6" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(576.5478, 791.8899)
+rotation = -3.1991227
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow6"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow7" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(950.18414, 798.25354)
+rotation = -3.1339498
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow7"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow8" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(1320.1841, 791.8899)
+rotation = -3.1339498
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow8"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow9" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+z_index = 3
+position = Vector2(219.27504, 1285.5262)
+rotation = -3.1038291
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow9"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow10" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(580.18414, 1285.5262)
+rotation = -3.1991227
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow10"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow13" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(207.45708, 1823.7085)
+rotation = -3.1038291
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow13"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow15" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(199.27525, 2353.7085)
+rotation = -3.1038291
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow15"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow17" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+z_index = 3
+position = Vector2(204.54547, 2864.5454)
+rotation = -3.1038291
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow17"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow11" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.46666667, 0.8509804, 0.34901962, 1)
+z_index = 3
+position = Vector2(953.8205, 1291.8899)
+rotation = -3.1339498
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow11"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexWindow12" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.12941177, 0.8745098, 0, 1)
+z_index = 3
+position = Vector2(1323.8204, 1285.5262)
+rotation = -3.1339498
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("1_vb5ey")
+
+[node name="Bg" type="Sprite2D" parent="BackLayer/ColorRect3/TexWindow12"]
+modulate = Color(0.85, 0.85, 0.85, 0.42745098)
+z_index = -2
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("1_vb5ey")
+
+[node name="TexBuildingWallDecoA" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(1520.8535, 1405.8572)
+rotation = 1.5707964
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA2" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(32.112015, 213.25793)
+rotation = 4.712389
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA3" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(23.713753, 2949.8267)
+rotation = 4.712389
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA16" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(-63.39419, 3962.5771)
+rotation = 4.712389
+scale = Vector2(2.0507548, 4.300142)
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA17" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(-123.26145, 3895.7224)
+rotation = 4.733575
+scale = Vector2(2.0507548, 4.300142)
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA15" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(-5.7415333, 3447.275)
+rotation = 4.712389
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA7" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(1535.7815, 570.53394)
+rotation = 4.712389
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA10" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(31.09082, 2248.0376)
+rotation = 4.712389
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA8" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(28.1875, 1100.5781)
+rotation = 4.712389
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA9" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(18.527534, 1542.2991)
+rotation = 1.5707964
+texture = ExtResource("2_50h04")
+flip_h = true
+
+[node name="TexBuildingWallDecoA4" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(17.079697, 707.62836)
+rotation = 4.712389
+texture = ExtResource("3_48745")
+flip_h = true
+
+[node name="TexBuildingWallDecoA5" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(1522.1188, 977.6426)
+rotation = 4.712389
+texture = ExtResource("3_48745")
+flip_h = true
+
+[node name="TexBuildingWallDecoA11" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(-1.2087402, 1872.9395)
+rotation = 4.712389
+texture = ExtResource("3_48745")
+flip_h = true
+
+[node name="TexBuildingWallDecoA6" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+position = Vector2(1527.4292, 175.80902)
+rotation = 4.712389
+texture = ExtResource("3_48745")
+flip_h = true
+
+[node name="TexBuildingWallDecoA12" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+z_index = 9
+position = Vector2(302.5901, 11.113823)
+rotation = 3.1415927
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA13" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+z_index = 9
+position = Vector2(769.59125, 32.081024)
+texture = ExtResource("2_50h04")
+
+[node name="TexBuildingWallDecoA14" type="Sprite2D" parent="BackLayer/ColorRect3"]
+modulate = Color(0.3019608, 0.10980392, 0.36862746, 1)
+z_index = 9
+position = Vector2(1295.2808, 21.237984)
+rotation = 0.09757143
+texture = ExtResource("2_50h04")
+flip_h = true
+flip_v = true
+
+[node name="BackgroundLayer" type="Node2D" parent="."]
+modulate = Color(0.1254902, 0.3137255, 0.16862746, 1)
+z_index = -60
+
+[node name="TexChimneyA" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(-2281.659, -2965.8867)
+rotation = -0.08662227
+scale = Vector2(1.3255639, 3.3359745)
+texture = ExtResource("4_48745")
+
+[node name="TexChimneyA2" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(-3409, -2358.0002)
+rotation = 0.21151349
+scale = Vector2(1.3255639, 3.050677)
+texture = ExtResource("4_48745")
+
+[node name="TexChimneyA3" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(3839.9998, -2829.0005)
+rotation = 0.115667924
+scale = Vector2(1.8045813, 3.7156987)
+texture = ExtResource("4_48745")
+
+[node name="TexChimneyA12" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(3919, -229.00049)
+rotation = 0.115667924
+scale = Vector2(1.3964267, 3.4900362)
+texture = ExtResource("4_48745")
+
+[node name="TexChimneyA13" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(5891, -1869)
+rotation = -0.09778525
+scale = Vector2(1.1723033, 3.5341146)
+texture = ExtResource("4_48745")
+
+[node name="TexChimneyA16" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(6285, -984.9998)
+rotation = 0.018450752
+scale = Vector2(1.1723033, 3.5341146)
+texture = ExtResource("5_kdnf1")
+
+[node name="TexChimneyA17" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(5242, -603.00006)
+rotation = 0.018450752
+scale = Vector2(1.8722178, 3.240275)
+texture = ExtResource("5_kdnf1")
+
+[node name="TexChimneyA18" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(3011, -2026.0001)
+rotation = 0.36178356
+scale = Vector2(1.201674, 1.6864692)
+texture = ExtResource("5_kdnf1")
+
+[node name="TexChimneyA19" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(-2886.0002, -1482)
+rotation = -0.004529804
+scale = Vector2(1.201674, 1.6864692)
+texture = ExtResource("5_kdnf1")
+
+[node name="TexChimneyA20" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(-1827, -1692.0001)
+rotation = -0.004529804
+scale = Vector2(-1.3476, 1.5618025)
+texture = ExtResource("5_kdnf1")
+
+[node name="TexChimneyA21" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(-5298, -2172)
+rotation = 0.15609828
+scale = Vector2(-3.646686, 4.205797)
+texture = ExtResource("5_kdnf1")
+
+[node name="TexChimneyA14" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(-4704, -1755.0001)
+rotation = 0.04601769
+scale = Vector2(1.1723033, 3.5341146)
+texture = ExtResource("4_48745")
+
+[node name="TexChimneyA15" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(-3095, -1508)
+rotation = 0.04601769
+scale = Vector2(0.7306464, 2.637956)
+texture = ExtResource("4_48745")
+
+[node name="TexChimneyA4" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(4659, -2257.9998)
+rotation = -0.046114713
+scale = Vector2(1.2257118, 3.160153)
+texture = ExtResource("4_48745")
+
+[node name="TexChimneyA5" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(-4143.0005, -2641)
+rotation = -0.046114713
+scale = Vector2(2.1177654, 2.4752884)
+texture = ExtResource("5_vukct")
+
+[node name="TexChimneyA6" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(5075.001, -2564.0002)
+rotation = 0.099190086
+scale = Vector2(1.8843538, 2.8024344)
+texture = ExtResource("5_vukct")
+
+[node name="TexChimneyA7" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(3238, -1286.0005)
+rotation = 0.099190086
+scale = Vector2(1.2804251, 1.5933452)
+texture = ExtResource("5_vukct")
+
+[node name="TexChimneyA8" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(4301, -1611)
+rotation = -0.27792373
+scale = Vector2(1.2804251, 1.5933452)
+texture = ExtResource("5_vukct")
+
+[node name="TexChimneyA9" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(5517, -1573)
+rotation = -0.061860085
+scale = Vector2(1.2804251, 1.5933452)
+texture = ExtResource("5_vukct")
+
+[node name="TexChimneyA10" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(-2611.9995, -1432)
+rotation = -0.061860085
+scale = Vector2(1.0177902, 1.6086729)
+texture = ExtResource("5_vukct")
+
+[node name="TexChimneyA11" type="Sprite2D" parent="BackgroundLayer"]
+position = Vector2(-3790, -1421.0001)
+rotation = -0.030213386
+scale = Vector2(1.0177902, 1.6086729)
+texture = ExtResource("5_vukct")
+
+[node name="ColorRect" type="ColorRect" parent="BackgroundLayer"]
+offset_left = -7548.0
+offset_top = -1635.9998
+offset_right = 6940.8525
+offset_bottom = 1036.6001
+rotation = 0.000774011
+
+[node name="ColorRect2" type="ColorRect" parent="BackgroundLayer"]
+offset_left = -4878.0
+offset_top = -1787.0
+offset_right = -3936.433
+offset_bottom = 885.59985
+rotation = 0.000774011
+
+[node name="ColorRect3" type="ColorRect" parent="BackgroundLayer"]
+offset_left = -3579.0
+offset_top = -1813.0
+offset_right = -2855.0322
+offset_bottom = 859.59985
+rotation = 0.14377257
+
+[node name="ColorRect4" type="ColorRect" parent="BackgroundLayer"]
+offset_left = -2506.0
+offset_top = -1694.0
+offset_right = -1782.0322
+offset_bottom = 978.59985
+rotation = -0.08181612
+
+[node name="ColorRect5" type="ColorRect" parent="BackgroundLayer"]
+offset_left = 4753.0005
+offset_top = -1752.0
+offset_right = 5476.9683
+offset_bottom = 920.59985
+rotation = 0.0668637
+
+[node name="ColorRect6" type="ColorRect" parent="BackgroundLayer"]
+offset_left = 2853.0
+offset_top = -1728.0
+offset_right = 3576.9678
+offset_bottom = 944.59985
+rotation = 0.0668637
+
+[node name="ColorRect7" type="ColorRect" parent="BackgroundLayer"]
+offset_left = 5899.0
+offset_top = -1868.0
+offset_right = 6622.968
+offset_bottom = 804.59985
+rotation = 0.020662494
+
+[node name="ParticleChimney" parent="BackgroundLayer" instance=ExtResource("5_0f8rt")]
+position = Vector2(-4666.0005, -3300.0005)
+rotation = -0.19872938
+
+[node name="ParticleChimney2" parent="BackgroundLayer" instance=ExtResource("5_0f8rt")]
+position = Vector2(3949.0002, -4476.0005)
+rotation = -0.19872938
+
+[node name="ParticleChimney3" parent="BackgroundLayer" instance=ExtResource("5_0f8rt")]
+position = Vector2(3992.0005, -4415)
+rotation = -0.19872938
+
+[node name="Stars" type="Node2D" parent="."]
+modulate = Color(0.12179999, 0.87, 0.19661991, 0.39607844)
+z_index = -61
+
+[node name="TexStarA" type="Sprite2D" parent="Stars"]
+position = Vector2(-5277, -6727)
+texture = ExtResource("8_3icl3")
+
+[node name="TexStarA2" type="Sprite2D" parent="Stars"]
+position = Vector2(2990, -5328)
+rotation = 0.35304192
+texture = ExtResource("8_3icl3")
+
+[node name="TexStarA3" type="Sprite2D" parent="Stars"]
+position = Vector2(508, -4652)
+rotation = 0.35304192
+texture = ExtResource("8_3icl3")
+
+[node name="TexStarA4" type="Sprite2D" parent="Stars"]
+position = Vector2(-5999, -3897)
+rotation = 0.35304192
+texture = ExtResource("8_3icl3")
+
+[node name="TexStarA5" type="Sprite2D" parent="Stars"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+position = Vector2(3484, -3648)
+rotation = -0.5674416
+texture = ExtResource("8_3icl3")
+
+[node name="TexStarB" type="Sprite2D" parent="Stars"]
+position = Vector2(-3796, -8099)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB10" type="Sprite2D" parent="Stars"]
+position = Vector2(-5298, -10669)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB11" type="Sprite2D" parent="Stars"]
+position = Vector2(4503, -10932)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB2" type="Sprite2D" parent="Stars"]
+position = Vector2(3275, -5678)
+rotation = 0.3347505
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB3" type="Sprite2D" parent="Stars"]
+position = Vector2(-885.9999, -8353)
+rotation = -0.3225554
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB5" type="Sprite2D" parent="Stars"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+position = Vector2(-2736.0002, -10970.001)
+rotation = 0.30997518
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB12" type="Sprite2D" parent="Stars"]
+position = Vector2(-165.99976, -9127)
+rotation = 1.3789188
+scale = Vector2(0.51541257, 0.51541257)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB6" type="Sprite2D" parent="Stars"]
+position = Vector2(4476, -9818)
+rotation = 0.30997518
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB7" type="Sprite2D" parent="Stars"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+position = Vector2(6954, -7108)
+rotation = 0.30997518
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB8" type="Sprite2D" parent="Stars"]
+position = Vector2(6116, -3164)
+rotation = 0.30997518
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB9" type="Sprite2D" parent="Stars"]
+position = Vector2(-5866, -3036)
+rotation = 0.30997518
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB4" type="Sprite2D" parent="Stars"]
+position = Vector2(4001.999, -9460.001)
+rotation = -0.3225554
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarC" type="Sprite2D" parent="Stars"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+position = Vector2(865, -7055)
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarC2" type="Sprite2D" parent="Stars"]
+position = Vector2(-5196, -4717)
+rotation = 0.6271871
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarC3" type="Sprite2D" parent="Stars"]
+position = Vector2(-2811.9995, -3789)
+rotation = 0.6271871
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarC4" type="Sprite2D" parent="Stars"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+position = Vector2(4806.9995, -7827)
+rotation = -0.5353113
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarC5" type="Sprite2D" parent="Stars"]
+position = Vector2(7129.9995, -8926)
+rotation = -0.5353113
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarB17" type="Sprite2D" parent="Stars"]
+position = Vector2(3608.4302, -4467.127)
+rotation = 0.30997518
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB18" type="Sprite2D" parent="Stars"]
+position = Vector2(6086.43, -1757.127)
+rotation = 0.30997518
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB19" type="Sprite2D" parent="Stars"]
+position = Vector2(3134.4292, -4109.1284)
+rotation = -0.3225554
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarC10" type="Sprite2D" parent="Stars"]
+position = Vector2(3939.4297, -2476.127)
+rotation = -0.5353113
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarC11" type="Sprite2D" parent="Stars"]
+position = Vector2(6262.4297, -3575.127)
+rotation = -0.5353113
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarC6" type="Sprite2D" parent="Stars"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+position = Vector2(1246.0005, -10567)
+rotation = -0.5353113
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarC7" type="Sprite2D" parent="Stars"]
+position = Vector2(1540, -8663)
+rotation = 0.9214451
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarB20" type="Sprite2D" parent="Stars"]
+position = Vector2(-5433.5703, -7739.9785)
+rotation = -0.3225554
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB21" type="Sprite2D" parent="Stars"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+position = Vector2(-4713.5713, -8513.979)
+rotation = 1.3789188
+scale = Vector2(0.51541257, 0.51541257)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarC12" type="Sprite2D" parent="Stars"]
+position = Vector2(-3301.5703, -9953.979)
+rotation = -0.5353113
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarC13" type="Sprite2D" parent="Stars"]
+position = Vector2(-3007.5708, -8049.9785)
+rotation = 0.9214451
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarB22" type="Sprite2D" parent="Stars"]
+position = Vector2(2529.8335, -6618.2793)
+rotation = 0.43683025
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB23" type="Sprite2D" parent="Stars"]
+position = Vector2(3249.834, -7392.2793)
+rotation = 2.1383045
+scale = Vector2(0.51541257, 0.51541257)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarC14" type="Sprite2D" parent="Stars"]
+position = Vector2(4661.834, -8832.279)
+rotation = 0.22407436
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarC15" type="Sprite2D" parent="Stars"]
+position = Vector2(4955.8335, -6928.2793)
+rotation = 1.6808307
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarB13" type="Sprite2D" parent="Stars"]
+position = Vector2(-6778.5664, -5497.251)
+rotation = -0.27872753
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB14" type="Sprite2D" parent="Stars"]
+modulate = Color(0.28235295, 0.8509804, 0.43529412, 1)
+position = Vector2(-6058.5674, -6271.251)
+rotation = 1.4227467
+scale = Vector2(0.51541257, 0.51541257)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB15" type="Sprite2D" parent="Stars"]
+position = Vector2(-1416.5669, -6962.251)
+rotation = 0.35380304
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarB16" type="Sprite2D" parent="Stars"]
+position = Vector2(-1890.5674, -6604.252)
+rotation = -0.27872753
+scale = Vector2(0.69091046, 0.69091046)
+texture = ExtResource("9_j2fjb")
+
+[node name="TexStarC8" type="Sprite2D" parent="Stars"]
+position = Vector2(-1085.5674, -4971.251)
+rotation = -0.49148342
+texture = ExtResource("10_j2fjb")
+
+[node name="TexStarC9" type="Sprite2D" parent="Stars"]
+position = Vector2(-4352.567, -5807.251)
+rotation = 0.9652729
+texture = ExtResource("10_j2fjb")

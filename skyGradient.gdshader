@@ -4,7 +4,7 @@ uniform vec4 cBottom : source_color;
 
 
 void fragment() {
-	COLOR = mix(cTop, cBottom, UV.y);
+	COLOR = mix(cTop, cBottom, pow(UV.y,1.6f));
 }
 
 //void light() {

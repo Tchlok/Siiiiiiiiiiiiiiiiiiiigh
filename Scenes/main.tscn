@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://dkvs4qw4w51w6"]
+[gd_scene load_steps=31 format=3 uid="uid://dkvs4qw4w51w6"]
 
 [ext_resource type="Script" uid="uid://phwnqa6bomy7" path="res://Scripts/game.gd" id="1_jjgbg"]
 [ext_resource type="Script" uid="uid://bvcsurj3ml6jv" path="res://Scripts/Endings.gd" id="2_bo1nx"]
@@ -17,6 +17,8 @@
 [ext_resource type="Texture2D" uid="uid://bpcm5kbghb3jf" path="res://Sprites/Tex_ScopeNotch.png" id="13_b3802"]
 [ext_resource type="Script" uid="uid://yhx6rbu6kpv4" path="res://Scripts/Spawn.gd" id="13_fdnlq"]
 [ext_resource type="PackedScene" uid="uid://dpo76kgdepwob" path="res://Scenes/Layouts/Layout_1.tscn" id="15_hibaj"]
+[ext_resource type="PackedScene" uid="uid://bgdt5qdsmg3m7" path="res://Scenes/Layouts/Layout_2.tscn" id="16_pdsj5"]
+[ext_resource type="PackedScene" uid="uid://c6xfbcakgyi3i" path="res://Scenes/Layouts/Layout_3.tscn" id="17_ee4r6"]
 [ext_resource type="PackedScene" uid="uid://ccx3u8sgka2d" path="res://Scenes/Targets/TargetCivB.tscn" id="18_hibaj"]
 [ext_resource type="PackedScene" uid="uid://b6x668g670q4d" path="res://Scenes/Targets/TargetCivC.tscn" id="19_pdsj5"]
 [ext_resource type="PackedScene" uid="uid://dmiqrbulmu483" path="res://Scenes/Targets/TargetCivD.tscn" id="20_ee4r6"]
@@ -216,7 +218,7 @@ crosshairRotMod = 12.0
 colors = Array[Color]([Color(0.16078432, 1, 0.015686275, 1), Color(0.05490196, 0, 0.06666667, 1), Color(0.05490196, 0, 0.06666667, 1), Color(0.21960784, 0.078431375, 0.24313726, 1), Color(0.26666668, 0.08627451, 0.3019608, 1), Color(0.26666668, 0.08627451, 0.3019608, 1), Color(0.4150485, 0.1544118, 0.46614218, 1)])
 colorRect = NodePath("Camera2D/ColorRect")
 gameBoundsX = 4000.0
-gameBoundsTop = -6500.0
+gameBoundsTop = -10000.0
 gameBoundsBottom = -500.0
 gameMaxMoveSpeed = 2000.0
 gameCamAcceleration = 12000.0
@@ -394,14 +396,14 @@ position = Vector2(195, -2500)
 z_index = -100
 material = SubResource("ShaderMaterial_fdnlq")
 offset_left = -6579.0
-offset_top = -6882.0
+offset_top = -12554.0
 offset_right = 6214.0
 offset_bottom = 15411.0
 color = Color(0.1033332, 0.023251556, 0.21055165, 1)
 
 [node name="spawn" type="Node2D" parent="."]
 script = ExtResource("13_fdnlq")
-layouts = Array[PackedScene]([ExtResource("15_hibaj")])
+layouts = Array[PackedScene]([ExtResource("15_hibaj"), ExtResource("16_pdsj5"), ExtResource("17_ee4r6")])
 spawnPointUsageRatio = 1.0
 mainTargetPacked = ExtResource("10_hptm8")
 civTargets = Array[PackedScene]([ExtResource("9_ynf5e"), ExtResource("18_hibaj"), ExtResource("19_pdsj5"), ExtResource("20_ee4r6")])

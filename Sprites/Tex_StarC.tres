@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://denkick1p22rf"]
+
+[ext_resource type="Texture2D" uid="uid://ch388a57p4tvs" path="res://Sprites/StarSheet.png" id="1_ct85x"]
+
+[resource]
+atlas = ExtResource("1_ct85x")
+region = Rect2(400, 0, 200, 0)

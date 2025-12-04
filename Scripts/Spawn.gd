@@ -15,7 +15,9 @@ func spawn():
 		curLayout=null
 	spawnPoints.clear()
 	var layoutPacked : PackedScene = layouts.pick_random()
-	var layout = layoutPacked.instantiate()
+	var layout:Node2D = layoutPacked.instantiate()
+	if randf()>0.5:
+		layout.scale*=Vector2(-1,1)
 	curLayout = layout
 
 	# front layer
