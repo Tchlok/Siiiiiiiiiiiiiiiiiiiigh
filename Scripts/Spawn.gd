@@ -39,7 +39,7 @@ func spawn():
 
 	
 
-	var usedSpawnPointsCount : int = spawnPoints.size()*spawnPointUsageRatio-1
+	var usedSpawnPointsCount : int = spawnPoints.size()*spawnPointUsageRatio
 	print(str(spawnPoints.size())+"   "+str(usedSpawnPointsCount))
 
 	for i in usedSpawnPointsCount:

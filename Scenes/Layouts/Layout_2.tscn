@@ -1804,14 +1804,14 @@ position = Vector2(-3759, -9016)
 [node name="Node2D4" type="Node2D" parent="MoonSpawnPoints"]
 position = Vector2(1857, -7510)
 
-[node name="Node2D5" type="Node2D" parent="MoonSpawnPoints"]
-position = Vector2(4503, -6032)
-
 [node name="Node2D6" type="Node2D" parent="MoonSpawnPoints"]
 position = Vector2(331, -8225)
 
 [node name="Node2D7" type="Node2D" parent="MoonSpawnPoints"]
 position = Vector2(2937, -8900)
+
+[node name="Node2D5" type="Node2D" parent="MoonSpawnPoints"]
+position = Vector2(3509, -6741)
 
 [node name="BackgroundLayer" type="Node2D" parent="."]
 modulate = Color(0.1254902, 0.3137255, 0.16862746, 1)

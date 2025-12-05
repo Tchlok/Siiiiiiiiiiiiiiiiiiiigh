@@ -1636,7 +1636,7 @@ position = Vector2(-3759, -9016)
 position = Vector2(1857, -7510)
 
 [node name="Node2D5" type="Node2D" parent="MoonSpawnPoints"]
-position = Vector2(4503, -6032)
+position = Vector2(3509, -6741)
 
 [node name="Node2D6" type="Node2D" parent="MoonSpawnPoints"]
 position = Vector2(331, -8225)

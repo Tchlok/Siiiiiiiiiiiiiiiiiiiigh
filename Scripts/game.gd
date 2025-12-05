@@ -55,14 +55,13 @@ var swayIntensity : float
 
 var moveAxis : Vector2
 func _enter_tree():
-	position=startPosition
+	camera.position=startPosition
 
 func _ready():
 	endings.visible=false
 	endings.resetEndingFlags()
 
 func _process(delta):
-
 	moveAxis=Vector2.ZERO
 	if Input.is_action_pressed("MoveUp"):
 		moveAxis+=Vector2.UP
@@ -81,10 +80,11 @@ func _process(delta):
 			if Input.is_action_just_pressed("Shoot"):
 				_newState(GameState.ZoomUp)
 				crosshairAnim.play("CrosshairOn")
+				crosshairSpring.visible=true
 				spawn.spawn()
 		GameState.ZoomUp:
-			crosshairSpring.position=camera.position
 			camera.position = startPosition.lerp(zoomUpPosition, zoomUpCurve.sample(MathS.Clamp01(_t/zoomUpDuration)))
+			crosshairSpring.position=camera.position
 			if _t>=zoomUpDuration:
 				_newState(GameState.Game)
 		GameState.Game:
@@ -103,6 +103,7 @@ func _process(delta):
 			colorRect.color.a = expiredCurve.sample(MathS.Clamp01(_t/expiredDuration))
 			if aOld!=1 and colorRect.color.a==1:
 				endings.loadEndingVisuals()
+				crosshairSpring.visible=false
 	
 			if _t>=expiredDuration:
 				_newState(GameState.Ended)
@@ -116,7 +117,9 @@ func _process(delta):
 			var aOld = colorRect.color.a
 			colorRect.color.a = restartCurve.sample(MathS.Clamp01(_t/restartDuration))
 			if aOld!=1 and colorRect.color.a==1:
-				position=startPosition
+				
+				camera.position=startPosition
+				crosshairSpring.position=camera.position
 				endings.visible=false
 			if _t>=restartDuration:
 				_newState(GameState.Start)
@@ -145,6 +148,7 @@ func _physics_process(delta):
 			sway.x=sin(_t*gameCamSwaySpeed)*2*gameCamSwayMag*swayIntensity
 			sway.y=sin(_t*0.5*gameCamSwaySpeed)*gameCamSwayMag*swayIntensity
 			crosshairShake.position=sway
+			camera.position=Vector2(clamp(camera.position.x,-gameBoundsX, gameBoundsX), clamp(camera.position.y,gameBoundsTop,gameBoundsBottom))
 		GameState.GunFlash:
 			pass
 		GameState.Expired:
@@ -155,12 +159,12 @@ func _physics_process(delta):
 			pass
 	_tPhys+=delta
 
-	var crossRigid : float = gameBaseRigid
-	var crossDamp : float = gameBaseDamp
-	var crossToCam : Vector2 = crosshairSpring.position-camera.position
-	crossVelocity+= -crossRigid*crossToCam-(crossDamp*crossVelocity)
+	if gameState==GameState.Game or gameState==GameState.ZoomUp:
+		var crossRigid : float = gameBaseRigid
+		var crossDamp : float = gameBaseDamp
+		var crossToCam : Vector2 = crosshairSpring.position-camera.position
+		crossVelocity+= -crossRigid*crossToCam-(crossDamp*crossVelocity)
 
-	camera.position=Vector2(clamp(camera.position.x,-gameBoundsX, gameBoundsX), clamp(camera.position.y,gameBoundsTop,gameBoundsBottom))
 
 
 var crossVelocity : Vector2
@@ -193,3 +197,4 @@ func shoot():
 	colorRect.color=gunFlashColor
 	colorRect.color.a=1
 	endings.loadEndingVisuals()
+	crosshairSpring.visible=false
