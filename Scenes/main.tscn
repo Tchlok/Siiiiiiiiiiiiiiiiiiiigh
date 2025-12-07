@@ -3,8 +3,8 @@
 [ext_resource type="Script" uid="uid://phwnqa6bomy7" path="res://Scripts/game.gd" id="1_jjgbg"]
 [ext_resource type="Script" uid="uid://bvcsurj3ml6jv" path="res://Scripts/Endings.gd" id="2_bo1nx"]
 [ext_resource type="Texture2D" uid="uid://cos4krcshekyb" path="res://Sprites/Endings/Tex_Ending_Bottle.png" id="3_8gbba"]
-[ext_resource type="Texture2D" uid="uid://c6axsqyi08jbc" path="res://Sprites/Endings/Tex_Ending_Civ_0.png" id="3_344ge"]
-[ext_resource type="Texture2D" uid="uid://ddciusf2nxm1a" path="res://Sprites/Endings/Tex_Ending_Hare_0.png" id="4_ynf5e"]
+[ext_resource type="Texture2D" uid="uid://c6axsqyi08jbc" path="res://Sprites/Endings/Tex_Ending_Civ.png" id="3_344ge"]
+[ext_resource type="Texture2D" uid="uid://ddciusf2nxm1a" path="res://Sprites/Endings/Tex_Ending_Lepus.png" id="4_ynf5e"]
 [ext_resource type="Texture2D" uid="uid://biknpesceou7p" path="res://Sprites/Endings/Tex_Ending_Near_Miss.png" id="5_hptm8"]
 [ext_resource type="Texture2D" uid="uid://dpmdsdjp11uhn" path="res://Sprites/Endings/Tex_Ending_Miss.png" id="6_d1ilt"]
 [ext_resource type="Texture2D" uid="uid://bvbxwxwrcxurs" path="res://Sprites/Endings/Tex_Ending_Moon.png" id="8_6iyac"]
@@ -299,20 +299,28 @@ offset_bottom = 2032.0
 mouse_filter = 2
 color = Color(1, 1, 1, 0)
 
-[node name="Endings" type="Node2D" parent="game/Camera2D" node_paths=PackedStringArray("sprite", "title", "comment")]
+[node name="Endings" type="Node2D" parent="game/Camera2D" node_paths=PackedStringArray("sprite", "title", "commentLabel")]
 z_index = 500
 scale = Vector2(1.667, 1.667)
 script = ExtResource("2_bo1nx")
 sprite = NodePath("Sprite2D")
 title = NodePath("Title")
-comment = NodePath("Comment")
+commentLabel = NodePath("Comment")
 nearMissThreshold = 400.0
+commentFallback = "..."
+commentsCiv = Array[String](["WHAT ARE YOU DOING? THAT WAS A CIVILIAN!", "THIS WILL BE ONE EXPENSIVE COVERUP...", "THERE GOES MY ENTIRE VACATION...", "ARE YOU DOING THIS ON PURPOSE?", "WHAT IS WRONG WITH YOU?", "STOP IT! STOP IT! STOOOOOP!!", "STOP. KILLING. CIVILIANS.", "STOP IT YOU ████", "YOU ARE EVERYTHING THAT IS WRONG WITH THE WORLD.", "YOU DISGUST ME.", "I HATE YOU MORE THAN YOU COULD EVER IMAGINE.", "STOP IT YOU █████ ███████  ", "███████ ███", "█████████ ███ █████ ███ ███ ███", "...........", "████ YOU! I QUIT."])
 _civTex = Array[Texture2D]([ExtResource("3_344ge")])
-_hareTex = Array[Texture2D]([ExtResource("4_ynf5e")])
+commentsLepus = Array[String](["MISSION SUCCESS!", "MISSION SUCCESS!", "MISSION SUCCESS!", "MISSION SUCCESS!", "MISSION SUCCESS!", "MISSION SUCCESS!", "MISSION SUCCESS!", "MISSION SUCCESS!", "MISSION SUCCESS!", "MISSION SUCCESS!", "MISSION COMPLETE!", "MISSION COMPLETE!", "MISSION COMPLETE!", "MISSION COMPLETE!", "MISSION COMPLETE!", "MISSION COMPLETE!", "MISSION COMPLETE!", "MISSION COMPLETE!", "MISSION COMPLETE!", "MISSION COMPLETE!", "YIPPEEEEEEE!!!"])
+_lepusTex = Array[Texture2D]([ExtResource("4_ynf5e")])
+commentsNearMiss = Array[String](["DAMN IT! YOU ALMOST HAD THEM...", "YOU WERE SOOOO CLOSE...", "TODAY IS NOT YOUR DAY HUH?", "VERY UNFORTUNATE.", "AAAAAAARGHGHH", "██ THIS █████ ███!!"])
 _nearMissTex = ExtResource("5_hptm8")
+commentsMiss = Array[String](["WHAT WAS THAT?", "WHAT ARE YOU EVEN SHOOTING AT?", "ARE YOU SERIOUS?", "I THOUGHT WE HIRED A PRO...", "PLEASE HIT SOMETHING. ANYTHING!", "CAN YOU HIT ANYTHING AT ALL?", "THIS IS PAINFUL TO WATCH.", "COME OOOOOON MAN...", "OH MY GOD...", "IF I HAD THE AUTHORITY TO FIRE YOU, I WOULD."])
 _missTex = ExtResource("6_d1ilt")
+commentsBottle = Array[String](["THAT WAS... QUITE IMPRESSIVE", "HOW ABOUT YOU USE THOSE SKILLS TO KILL THE TARGET?", "CAN YOU SAVE YOUR PARTY TRICKS FOR LATER?", "YES, I KNOW YOU CAN SNIPE, THAT IS WHY WE HIRED YOU", "CAN YOU PLEASE FOCUS ON THE MISSION?", "YOU ARE EXTREMELY ANNOYING."])
 _bottleTex = ExtResource("3_8gbba")
+commentsMoon = Array[String](["OUR CURRENT INTEL SUGGESTS THAT FORMER AGENT LEPUS IS NOT ON THE MOON.", "EVEN IF THEY WERE YOUR BULLET WOULD NOT REACH... OBVIOUSLY", "WHY ARE YOU DOING THIS?", "PLEASE STOP MESSING AROUND!", "YOU ARE NOT FUNNY."])
 _moonTex = ExtResource("8_6iyac")
+commentsExpired = Array[String](["HOW DID YOU NOT SEE THEM?? THEY WERE RIGHT THERE!", "YOU KNOW YOU ONLY HAVE 20 SECONDS, RIGHT??", "PLEASE FOCUS.", "ARE YOU EVEN AWAKE?", "HELLLLOOO?", "HELLLLOOOOOOOOOO???", "NO SLEEPING ON THE JOB!"])
 _expiredTex = ExtResource("10_jkdf5")
 
 [node name="Sprite2D" type="Sprite2D" parent="game/Camera2D/Endings"]
@@ -326,19 +334,20 @@ offset_top = -904.0
 offset_right = 1000.0
 offset_bottom = -604.0
 theme_override_fonts/normal_font = ExtResource("17_r33sp")
-theme_override_font_sizes/normal_font_size = 180
+theme_override_font_sizes/normal_font_size = 120
 bbcode_enabled = true
 text = "[center]TITLE"
 
 [node name="Comment" type="RichTextLabel" parent="game/Camera2D/Endings"]
 modulate = Color(0.11372549, 0.81960785, 0.18431373, 1)
 offset_left = -900.0
-offset_top = 370.0
+offset_top = 524.89496
 offset_right = 900.0
 offset_bottom = 970.0
+theme_override_constants/line_separation = 45
 theme_override_fonts/normal_font = ExtResource("17_r33sp")
-theme_override_font_sizes/normal_font_size = 90
-text = "COMMENT"
+theme_override_font_sizes/normal_font_size = 80
+bbcode_enabled = true
 
 [node name="CrosshairSpring" type="Node2D" parent="game"]
 z_index = 200
@@ -684,7 +693,7 @@ theme_override_fonts/normal_font = ExtResource("17_r33sp")
 theme_override_font_sizes/normal_font_size = 90
 theme_override_font_sizes/bold_font_size = 100
 bbcode_enabled = true
-text = "NAME:█████ LEPUS    AGE:██            ███:██████ "
+text = "NAME:███ LEPUS    AGE:██            ███:██████ "
 
 [node name="TexTargetPortrait" type="Sprite2D" parent="Start/Paper"]
 position = Vector2(281, 582)

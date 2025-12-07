@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddciusf2nxm1a"
-path="res://.godot/imported/Tex_Ending_Hare_0.png-81e8f27fb32091ee056f99cebde6b54f.ctex"
+path="res://.godot/imported/Tex_Ending_Lepus.png-7d26f4dced31abeb6b248907f5b24a1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Endings/Tex_Ending_Hare_0.png"
-dest_files=["res://.godot/imported/Tex_Ending_Hare_0.png-81e8f27fb32091ee056f99cebde6b54f.ctex"]
+source_file="res://Sprites/Endings/Tex_Ending_Lepus.png"
+dest_files=["res://.godot/imported/Tex_Ending_Lepus.png-7d26f4dced31abeb6b248907f5b24a1b.ctex"]
 
 [params]
 

@@ -13,7 +13,7 @@ func hit(endings : Endings):
         TargetType.Civ:
             endings.flagHitCiv=true
         TargetType.Main:
-            endings.flagHitHare=true
+            endings.flagHitLepus=true
         TargetType.Bottle:
             endings.flagHitBottle=true
         TargetType.Moon:

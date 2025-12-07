@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6axsqyi08jbc"
-path="res://.godot/imported/Tex_Ending_Civ_0.png-a96ad949c2aa07aa41018188c15bf5cb.ctex"
+path="res://.godot/imported/Tex_Ending_Civ.png-ef33c0c3ac184e70d0393a82d0749658.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Endings/Tex_Ending_Civ_0.png"
-dest_files=["res://.godot/imported/Tex_Ending_Civ_0.png-a96ad949c2aa07aa41018188c15bf5cb.ctex"]
+source_file="res://Sprites/Endings/Tex_Ending_Civ.png"
+dest_files=["res://.godot/imported/Tex_Ending_Civ.png-ef33c0c3ac184e70d0393a82d0749658.ctex"]
 
 [params]
 
